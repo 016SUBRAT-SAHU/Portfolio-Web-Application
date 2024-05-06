@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <link rel="stylesheet" href="style.css">
+  <title> Personal Portfolio Website </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/80af900ef9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/logo-sb.jpg" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects & Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p> Software Developer || enthusiast about artificial intelligence and machine learning</p>
+        <h1>Hi, I am <span>Subrat sahu.</span> <br> CSE(AIML) Undergrad @ GIETU- gunupur.</br>
+        </h1>
+      </div>
+      <div class="subject-text">
+        <h1>Studying <span>Artificial intelligence</span><br><span> & Machine Learning</span> and <span>Web
+            Devlopment.</span></br> </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!---------------------about section code------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/profile image.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Innovative and curious student and Passionate about programming. Currently pursuing bachelor of technology degree in the domain of computer science and specialization in artificial intelligence and machine learning <br>Exploring boundless opportunities in learning and growth.</br></p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>C/Java/python</span><br>programing language</li>
+              <li><span>Web Devlopment</span><br>HTML,CSS,JS</li>
+              <li><span>Database Languages</span><br>SQL and MongoDB</li>
+              <li><span>Git and Github</span></li>
+              <li><span>Data Structures and Algorithms</span> <br>Python</li>
+              <li><span>Operating Systems and Computer Networks</span></li>
+              <li><span>artificial intelligence and machine learning</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-26: Bachelor of Technology (BTech)</span><br>Computer Science-GIETU-Gunupur</li>
+              <li><span>2019-21: intermediate(+2)</span><br>Gyana vikash higher secondary school(berhmpur)</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------Services section code------------------------->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Projects & Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-users-viewfinder"></i>
+          <h2>Object detection using machine Learning</h2>
+          <p2> Object detection is a fundamental task in computer vision that involves identifying and locating multiple objects within an image or video. Unlike image classification, which assigns a single label to an entire image, object detection provide sprecise localization and classification of individualobjects.</p2>
+          <br>
+          <a href="#">Learn More </a>
+        </div>
+        <div>
+          <i class="fa-solid fa-utensils"></i>
+          <h2>ONLINE RECIPE SHARING PLATFORM</h2>
+          <p2> The main motive for this amazing  “ ONLINE RECIPE SHARING PLATFORM” is to connect the world with its various delicious recipes. this is a website created using HTML, CSS and javascript</p2><br>
+          <a href="#">Learn More </a>
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <h2>Travel and Tourisim</h2>
+          <p2> Tour India is a user-friendly website designed to simplify the planning process for tourists visiting India. By offering a one-stop platform for booking accommodation and car rentals, along with providing information about populartourist destination in india. </p2>
+          <a href="#">Learn More </a>
+        </div>
+      </div> 
+    </div>
+    <!---------------------Contact section code------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <!-- LEFT CONTENT -->
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>subratsahu016@gamil.com</p>
+            <p><i class="fa-solid fa-phone"></i>Ph No. +91 86XXXXXXXX</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/subrat-sahu-64b713266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHQsFkDOXQI2sV4gbupWgHQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/016SUBRAT-SAHU/016SUBRAT-SAHU"><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="SubratSahu_Resume (3).pdf" download class="btn btn2"> Download Resume </a>
+          </div>
+          <!-- RIGHT CONTENT -->
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email-Id" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="Submit" class="btn">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p> Copyright © subrat sahu </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu")
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzMtjbHF9N3e922EZcwCq8vcWDDgSNbULPEFzO-U_bR_NMKEqBOyzRWNyg-0l-9w1ei/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+
+</html>
